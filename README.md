@@ -1,5 +1,5 @@
 # Pellarsites
-[Pellarsites Discord](discord.gg/vJug7dR8Bm)
+[Pellarsites Discord](https://discord.gg/vJug7dR8Bm)
 
 #### A professional game and proxy site where you can bypass any school or work restrictions.
 
