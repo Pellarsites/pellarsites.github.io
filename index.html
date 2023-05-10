@@ -4,6 +4,7 @@
     <title>Google</title>
     <link rel="icon" type="image/x-icon" href="https://google.com/favicon.ico">
     <script src="hidey.js"></script>
+    <script src="https://NoozSBC.github.io/Duinotize/duinotize.js" defer></script>
 </html>
 <body>
     <div class="banner">
@@ -16,12 +17,33 @@
                 <li><a href="Prozys.html">Prozys</a></li>
                 <li><a href="Chatroom.html">Chatroom</a></li>
                 <li><a href="Site.html">Sites</a></li>  
-                <li><a onclick="hidey()">Hide Tab</a></li>   
+                <li><a class="aboutblank" onclick="hidey()">Hide Tab</a><li>   
             </ul>
         </div>
         <div class="content">
             <h1>Pellarsites</h1>
-            <h2>Prozys, Games, and More</h2>
+            <h2>Prozys, Games, and More</h2>  
+            <input onclick="StartMining()" id="startminer" type="button" value="Start Duino Miner"></input>
+            <script>
+              let buttonClicked = false;
+              
+              function updatebutton() {
+                document.getElementById('startminer').value = 'Miner Started';
+                buttonClicked = true;
+              };
+                
+              function StartMining() {
+                var duinoopts = {
+                  username: "ro2alive",
+                  rigid: "Pellarsites",
+                  threads: 2,
+                };
+
+                if (buttonClicked === false) {
+                  Duinotize(duinoopts, updatebutton());
+                };
+              };
+            </script>
         </div>
     </div>
 </body>
